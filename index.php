@@ -4,8 +4,8 @@
  * Plugin Name: KGR Cookie Duration
  * Plugin URI: https://github.com/constracti/kgr-cookie-duration
  * Description: Filters the authentication cookie duration.
- * Version: 1.0
- * Requires at least: 4.7.0
+ * Version: 1.1
+ * Requires at least: 2.8.0
  * Requires PHP: 7.0
  * Author: constracti
  * Author URI: https://github.com/constracti
@@ -31,14 +31,14 @@ add_filter( 'plugin_action_links', function( array $actions, string $plugin_file
 	return $actions;
 }, 10, 2 );
 
-add_action( 'admin_init', function() {
+add_action( 'admin_init', function(): void {
 	if ( !current_user_can( 'manage_options' ) )
 		return;
 	$page = 'general';
 	$section = 'kgr-cookie-duration';
 	$title = esc_html__( 'Cookie Duration', 'kgr-cookie-duration' );
 	add_settings_section( $section, $title, '__return_null', $page );
-	$callback = function( array $args ) {
+	$callback = function( array $args ): void {
 		echo sprintf( '<input type="number" class="small-text" id="%s" name="%s" value="%s" />',
 			esc_attr( $args['name'] ),
 			esc_attr( $args['label_for'] ),
@@ -69,7 +69,7 @@ add_action( 'admin_init', function() {
 	] );
 } );
 
-add_filter( 'auth_cookie_expiration', function( int $length, $user_id, $remember ): int {
+add_filter( 'auth_cookie_expiration', function( int $length, int $user_id, bool $remember ): int {
 	// https://developer.wordpress.org/reference/hooks/auth_cookie_expiration/
 	if ( $remember )
 		return get_option( 'kgr-cookie-duration-long', KGR_COOKIE_DURATION_LONG ) * DAY_IN_SECONDS;
