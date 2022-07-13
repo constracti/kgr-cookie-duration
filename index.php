@@ -4,7 +4,7 @@
  * Plugin Name: KGR Cookie Duration
  * Plugin URI: https://github.com/constracti/kgr-cookie-duration
  * Description: Filters the authentication cookie duration.
- * Version: 1.1
+ * Version: 1.0.1
  * Requires at least: 2.8.0
  * Requires PHP: 7.0
  * Author: constracti
