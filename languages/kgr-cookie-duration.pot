@@ -1,0 +1,57 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: KGR Cookie Duration\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-11-18 17:15+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: \n"
+"Language: \n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Loco-Version: 2.6.11; wp-6.6.2\n"
+"X-Domain: kgr-cookie-duration"
+
+#. Author of the plugin
+msgid "constracti"
+msgstr ""
+
+#: index.php:39
+msgid "Cookie Duration"
+msgstr ""
+
+#: index.php:65
+msgid "Cookie long duration"
+msgstr ""
+
+#: index.php:55
+msgid "Cookie short duration"
+msgstr ""
+
+#: index.php:47
+msgid "days"
+msgstr ""
+
+#. Description of the plugin
+msgid "Filters the authentication cookie duration."
+msgstr ""
+
+#. Author URI of the plugin
+msgid "https://github.com/constracti"
+msgstr ""
+
+#. URI of the plugin
+msgid "https://github.com/constracti/kgr-cookie-duration"
+msgstr ""
+
+#. Name of the plugin
+msgid "KGR Cookie Duration"
+msgstr ""
+
+#: index.php:29
+msgid "Settings"
+msgstr ""
